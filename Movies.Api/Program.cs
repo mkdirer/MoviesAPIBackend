@@ -1,4 +1,5 @@
 using System.Text;
+using Identity.Api;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.IdentityModel.Tokens;
@@ -32,6 +33,12 @@ builder.Services.AddAuthentication(x =>
         ValidateAudience = true,
         
     };
+});
+
+builder.Services.AddAuthorization(x =>
+{
+    x.AddPolicy(AuthConstants.AdminUserPolicyName, policy => policy.RequireClaim(AuthConstants.AdminRoleClaimName, "true"));
+    x.AddPolicy(AuthConstants.TrustedMemberPolicyName, policy => policy.RequireAssertion(c => c.User.HasClaim(m => m is {Type: AuthConstants.AdminRoleClaimName, Value: "true"}) || c.User.HasClaim(m => m is {Type:AuthConstants.TrustedMemberClaimName, Value: "true"})));
 });
 
 builder.Services.AddAuthorization();
