@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Diagnostics;
+using Movies.Api.Mapping;
 using Movies.Application.Repositories;
 using Movies.Application;
 using Movies.Application.Database;
@@ -29,7 +31,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
-
+app.UseMiddleware<ValidationMappingMiddleware>();
 app.MapControllers();
 
 var bdInitializer = app.Services.GetRequiredService<DbInitializer>();
