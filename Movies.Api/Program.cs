@@ -36,3 +36,4 @@ var bdInitializer = app.Services.GetRequiredService<DbInitializer>();
 await bdInitializer.InitializeAsync();
 
 app.Run();
+
