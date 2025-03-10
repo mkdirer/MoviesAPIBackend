@@ -19,6 +19,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		compose.yaml = compose.yaml
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity.Api", "Identity.Api\Identity.Api.csproj", "{4BD8C391-490D-4D1D-9AF4-00137370CE28}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,6 +30,7 @@ Global
 		{02F65C28-D121-4EE8-A29A-F9EE862324D9} = {437837AA-AECD-4F38-BBB5-AE8873E1DCCC}
 		{712E3DD0-AABF-4A6D-AF5D-19DEC82498EA} = {437837AA-AECD-4F38-BBB5-AE8873E1DCCC}
 		{3004A485-47B3-44F9-9941-D83686F071AA} = {437837AA-AECD-4F38-BBB5-AE8873E1DCCC}
+		{4BD8C391-490D-4D1D-9AF4-00137370CE28} = {E206559B-5371-451B-AD2E-D5E304174D51}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{02F65C28-D121-4EE8-A29A-F9EE862324D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -42,5 +45,9 @@ Global
 		{3004A485-47B3-44F9-9941-D83686F071AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3004A485-47B3-44F9-9941-D83686F071AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3004A485-47B3-44F9-9941-D83686F071AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BD8C391-490D-4D1D-9AF4-00137370CE28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BD8C391-490D-4D1D-9AF4-00137370CE28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BD8C391-490D-4D1D-9AF4-00137370CE28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BD8C391-490D-4D1D-9AF4-00137370CE28}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
