@@ -1,8 +1,8 @@
 using System.Text;
-using Identity.Api;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.IdentityModel.Tokens;
+using Movies.Api.Auth;
 using Movies.Api.Mapping;
 using Movies.Application.Repositories;
 using Movies.Application;
